@@ -793,7 +793,7 @@ or ant -Dj2ee.platform.classpath=&lt;server_classpath&gt; (where no properties f
             </sequential>
         </macrodef>
     </target>
-    <target name="-init-taskdefs">
+    <!--<target name="-init-taskdefs">
         <fail unless="libs.CopyLibs.classpath">
 The libs.CopyLibs.classpath property is not set up.
 This property must point to 
@@ -805,7 +805,7 @@ exists or setup the property manually. For example like this:
  ant -Dlibs.CopyLibs.classpath=a/path/to/org-netbeans-modules-java-j2seproject-copylibstask.jar
                 </fail>
         <taskdef classpath="${libs.CopyLibs.classpath}" resource="org/netbeans/modules/java/j2seproject/copylibstask/antlib.xml"/>
-    </target>
+    </target>-->
     <target name="-init-ap-cmdline-properties">
         <property name="annotation.processing.enabled" value="true"/>
         <property name="annotation.processing.processors.list" value=""/>
